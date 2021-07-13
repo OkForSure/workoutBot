@@ -38,4 +38,4 @@ client.on('message', async message => {
     if(commands) commands.run(client, message, arguments)
 })
 
-client.login(botConfig.token)
+client.login(process.env.token)
